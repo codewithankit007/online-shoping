@@ -3,35 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Your Online Store</title>
     <style>
+        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
-            margin: 0px;
-            padding: 5px;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
         }
+
         header {
-            background-color: #0b0a0a;
+            background-color: #333;
             color: #fff;
             padding: 10px;
             text-align: center;
         }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #555;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 10px;
-        }
-        main {
+
+        section {
             padding: 20px;
         }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -41,28 +33,62 @@
             bottom: 0;
             width: 100%;
         }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       li{
+            
+        list-style: none;
+        padding: 3px;
+        color: blue;
+        }
+        a{
+            text-decoration: none;
+            margin: 5px;
+            padding: 2px;
+            color: blue;
+        }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>Your Website Name</h1>
-    </header>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <ul>
+            <li><a href="">Home </a></li>
+            <li><a href=""></a>sevices</li>
+            <li><a href=""></a>product</li>
+            <li><a href=""></a>help</li>
+        </ul>
     </nav>
 
-    <main>
-        <h2>Welcome to Your Website!</h2>
-        <p>This is a simple HTML template. You can customize it to suit your needs.</p>
-    </main>
+    <header>
+        <h1>Your Online Store</h1>
+    </header>
+
+    <section>
+        <h2>Featured Products</h2>
+
+        <!-- Add your product listings here -->
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Description of Product 1. Price: $19.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Description of Product 2. Price: $24.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Add more product listings as needed -->
+    </section>
 
     <footer>
-        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        <p>&copy; 2024 Your Online Store. All rights reserved.</p>
     </footer>
 
 </body>
